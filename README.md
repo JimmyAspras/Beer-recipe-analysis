@@ -49,7 +49,7 @@ The pie chart of brewing methods is an alternative to the packed bubble chart cr
 The most popular styles are American IPA and American Pale Ale. A typical recipe is all grain and is created to achieve an ABV of 4.5-7.5%, IBUs of about 20-40, and color of 20 SRMs and below.
 
 ## R Code
-
+```
 library(tidyverse)
 library(readr)
 
@@ -94,3 +94,4 @@ ggplot(beer2, aes(x = BrewMethod, y = Efficiency)) +
   theme_minimal() + 
   theme(plot.title = element_text(hjust = 0.5, vjust = 3), axis.text.x = element_text(vjust = 7), 
         axis.title.y = element_text(vjust=4))
+```
